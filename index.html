@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Product Viewer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Controls Panel -->
+    <div class="controls-panel">
+        <h1>3D Product Viewer</h1>
+        <div class="control-group">
+            <label class="checkbox-container">
+                <input type="checkbox" id="autoRotateToggle" checked>
+                <span class="checkmark"></span>
+                Auto Rotate
+            </label>
+            <p class="help-text">Click on chair parts to interact</p>
+        </div>
+    </div>
+
+    <!-- Interaction Panel -->
+    <div class="interaction-panel" id="interactionPanel" style="display: none;">
+        <h3 id="partTitle"></h3>
+        <p id="partDescription"></p>
+        <div class="help-text">Click other parts to explore the chair</div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+        <p>Loading 3D Viewer...</p>
+    </div>
+
+    <!-- 3D Canvas Container -->
+    <div id="canvas-container"></div>
+
+    <!-- Single Main Script Reference - ES6 Module -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
